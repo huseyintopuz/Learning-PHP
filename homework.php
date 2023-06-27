@@ -13,8 +13,10 @@ return $value !== "" && $value !== Null;
 $randomKeys = array_rand($filteredArray, $count);
 return array_map(function ($key) use ($filteredArray){
 return $filteredArray[$key];
-}, (array)$randomKeys);
+}, $randomKeys);
 }
+
+
 
 print_r(cleanAndRandomize($planets, 2));
 print_r(cleanAndRandomize($planets, 3));

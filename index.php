@@ -102,8 +102,6 @@ function sum($x, $y)
     return $x + $y;
 }
 
-;
-
 //echo sum(3, 5);
 $sumFunction = sum(3, 5); // i can define function as a variable.
 echo $sumFunction;
@@ -114,10 +112,16 @@ $subtract = function ($x, $y) {
     return $x - $y;
 };
 echo $subtract(6, 3);
+echo "<br>";
+echo "<br>";
+echo "<br>";
 
 $numbers = [
     5, 6, 7
 ];
+
+echo $numbers[1] ;
+
 $numbers = array_map(function ($e) {
     return 3 * $e;
 }, $numbers);
@@ -217,8 +221,10 @@ say();
 // global function
 
 $name = "Hüseyin";
-    function getName() {
-        global $name;
-        echo $name;
-    }
-    getName();
+function getName()
+{
+    global $name;
+    echo $name;
+}
+
+getName();

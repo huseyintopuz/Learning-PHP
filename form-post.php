@@ -9,8 +9,8 @@
 </head>
 <body>
 <form action="post.php" method="post">
-    <input type="text" name="name" placeholder="name"><br />
-    <input type="text" name="surname" placeholder="surname"><br />
+    <input type="text" name="name" placeholder="name"><br/>
+    <input type="text" name="surname" placeholder="surname"><br/>
     <label>Languages</label>
     <label>PHP</label>
     <input type="checkbox" value="php" name="language[]"><br>
@@ -20,6 +20,7 @@
     <input type="checkbox" value="js" name="language[]"><br>
 
     <button type="submit">Send</button>
-</form>
+</form><br>
+
 </body>
 </html>

@@ -2,8 +2,8 @@
 
 for ($i = 1; $i <= 10; $i++) {
     $data[] = [
-        "title" => "Deneme" . $i,
-        "description" => "Deneme Description" . $i
+        "title" => "Experiment" . $i,
+        "description" => "Experiment Description" . $i
     ];
 }
 

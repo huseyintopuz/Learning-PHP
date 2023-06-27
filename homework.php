@@ -16,8 +16,6 @@ return $filteredArray[$key];
 }, $randomKeys);
 }
 
-
-
 print_r(cleanAndRandomize($planets, 2));
 print_r(cleanAndRandomize($planets, 3));
 print_r(cleanAndRandomize($planets, 2));

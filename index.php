@@ -5,10 +5,10 @@ error_reporting(E_ALL);
 
 echo "Hello World";
 echo "<br>";
-$isim = "Hüseyin ";
-echo $isim;
-$soyisim = "Topuz";
-echo $soyisim . "<br>";
+$name = "Hüseyin ";
+echo $name;
+$lastname = "Topuz";
+echo $lastname . "<br>";
 $_link = "bocek.net";
 echo $_link . "<br>";
 $villa = "Villa Emo ";
@@ -187,10 +187,9 @@ $categories = [
 ];
 
 // recursive function
-function getCategories($arr, $par = 0)
+function getCategories($arr, $par = 0): string
 {
-    $html = "";
-    $html .= "<ul>";
+    $html = "<ul>";
     foreach ($arr as $value) {
         if ($value['parent'] == $par) {
             $html .= "<li>";
@@ -207,7 +206,7 @@ echo getCategories($categories);
 
 // static function
 
-function say()
+function say(): void
 {
     static $number = 0;
     echo $number . "<br>";
@@ -221,7 +220,7 @@ say();
 // global function
 
 $name = "Hüseyin";
-function getName()
+function getName(): void
 {
     global $name;
     echo $name;

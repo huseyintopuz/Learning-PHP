@@ -40,7 +40,7 @@ print_r($plus);
 
 $mergedArray = array_merge($array, $array2);
 print_r($mergedArray);
-function cube($number)
+function cube($number): float|int
 {
     return $number * $number * $number;
 }
@@ -95,11 +95,11 @@ $newFullStuff = array_slice($fullStuff, 1, 2);
 print_r($newFullStuff);
 echo "<br>";
 
-$nnumber = range(1, 6);
-print_r(array_sum($nnumber)); // it sums all values;
+$numberTwo = range(1, 6);
+print_r(array_sum($numberTwo)); // it sums all values;
 echo "<br>";
 
-print_r(array_product($nnumber)); // it multiplies all values;
+print_r(array_product($numberTwo)); // it multiplies all values;
 
 $home = ['door', 'kitchen', 'bedroom'];
 array_push($home, 'bathroom', 'toilet'); // it adds new elements to the end;
@@ -122,17 +122,17 @@ $lists = ['one' => 'car', 'two' => 'bus'];
 extract($lists); // it adds as sign table;
 echo $one;
 
-$numberrrr = [
+$numbersNew = [
     2 => 1,
     4 => 5,
     6 => 3,
     1 => 7
 ];
-asort($numberrrr); // it sorts as value from smallest to largest with the same keys;
-arsort($numberrrr); // it sorts as value from largest to smallest with the same keys;
-ksort($numberrrr); // it sorts as keys from smallest to largest;
-krsort($numberrrr); // it sorts as keys from largest to smallest;
-print_r($numberrrr);
+asort($numbersNew); // it sorts as value from smallest to largest with the same keys;
+arsort($numbersNew); // it sorts as value from largest to smallest with the same keys;
+ksort($numbersNew); // it sorts as keys from smallest to largest;
+krsort($numbersNew); // it sorts as keys from largest to smallest;
+print_r($numbersNew);
 
 
 
